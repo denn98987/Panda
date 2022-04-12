@@ -1,11 +1,15 @@
 ﻿using System;
-using MediatR;
-using Panda.Application.Responses;
 
-namespace Panda.Application.Commands;
+namespace Panda.Application.Responses;
 
-public class CreatePandaCommand: IRequest<PandaResponse>
+public class PandaResponse
 {
+    public int PandaId
+    {
+        get;
+        set;
+    }
+
     public string Name
     {
         get;
