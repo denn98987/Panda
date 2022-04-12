@@ -15,6 +15,11 @@ public class PandaRepository : Repository<Core.Entities.Panda>, IPandaRepository
     {
     }
 
+    public async Task<Panda> GetPandasByName(string name)
+    {
+        return await _pandaContext.Pandas.FirstOrDefaultAsync(panda => panda.Name == name)!;
+    }
+
     public async Task<IEnumerable<Panda>> GetPandasByBirth(DateTime bdate)
     {
         return await _pandaContext.Pandas.Where(panda => panda.DateOfBirth == bdate).ToListAsync();

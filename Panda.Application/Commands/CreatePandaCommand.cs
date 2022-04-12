@@ -4,23 +4,11 @@ using Panda.Application.Responses;
 
 namespace Panda.Application.Commands;
 
-public class CreatePandaCommand: IRequest<PandaResponse>
+public class CreatePandaCommand : IRequest<PandaResponse>
 {
-    public string Name
-    {
-        get;
-        set;
-    }
+    public string Name { get; set; }
 
-    public DateTime DateBirth
-    {
-        get;
-        set;
-    }
+    public DateTime DateBirth { get; set; }
 
-    public int ParentId
-    {
-        get;
-        set;
-    }
+    public int ParentId { get; set; }
 }

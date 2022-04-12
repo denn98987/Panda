@@ -7,6 +7,7 @@ namespace Core.Repositories
 {
     public interface IPandaRepository : IRepository<Panda>
     {
+        Task<Panda> GetPandasByName(string name);
         Task<IEnumerable<Panda>> GetPandasByBirth(DateTime bdate);
     }
 }

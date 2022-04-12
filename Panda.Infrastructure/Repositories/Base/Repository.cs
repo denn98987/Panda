@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
 
-public class Repository < T > : IRepository < T > where T: class
+public class Repository<T> : IRepository<T> where T : class
 {
     protected readonly PandaContext _pandaContext;
 
@@ -29,7 +29,7 @@ public class Repository < T > : IRepository < T > where T: class
     {
         await _pandaContext.Set<T>().AddAsync(entity);
         await _pandaContext.SaveChangesAsync();
-        
+
         return entity;
     }
 
