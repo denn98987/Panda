@@ -4,14 +4,82 @@
     "D:\\deskt\\net project\\panda\\panda\\panda.csproj": {}
   },
   "projects": {
-    "D:\\deskt\\net project\\panda\\panda\\panda.csproj": {
+    "D:\\deskt\\net project\\panda\\Panda.Application\\Panda.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\deskt\\net project\\panda\\panda\\panda.csproj",
-        "projectName": "panda",
-        "projectPath": "D:\\deskt\\net project\\panda\\panda\\panda.csproj",
+        "projectUniqueName": "D:\\deskt\\net project\\panda\\Panda.Application\\Panda.Application.csproj",
+        "projectName": "Panda.Application",
+        "projectPath": "D:\\deskt\\net project\\panda\\Panda.Application\\Panda.Application.csproj",
         "packagesPath": "C:\\Users\\79991\\.nuget\\packages\\",
-        "outputPath": "D:\\deskt\\net project\\panda\\panda\\obj\\",
+        "outputPath": "D:\\deskt\\net project\\panda\\Panda.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\79991\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\deskt\\net project\\panda\\Panda.Core\\Panda.Core.csproj": {
+                "projectPath": "D:\\deskt\\net project\\panda\\Panda.Core\\Panda.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\deskt\\net project\\panda\\Panda.Core\\Panda.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\deskt\\net project\\panda\\Panda.Core\\Panda.Core.csproj",
+        "projectName": "Panda.Core",
+        "projectPath": "D:\\deskt\\net project\\panda\\Panda.Core\\Panda.Core.csproj",
+        "packagesPath": "C:\\Users\\79991\\.nuget\\packages\\",
+        "outputPath": "D:\\deskt\\net project\\panda\\Panda.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\79991\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +107,165 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\deskt\\net project\\panda\\Panda.Infrastructure\\Panda.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\deskt\\net project\\panda\\Panda.Infrastructure\\Panda.Infrastructure.csproj",
+        "projectName": "Panda.Infrastructure",
+        "projectPath": "D:\\deskt\\net project\\panda\\Panda.Infrastructure\\Panda.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\79991\\.nuget\\packages\\",
+        "outputPath": "D:\\deskt\\net project\\panda\\Panda.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\79991\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\deskt\\net project\\panda\\Panda.Core\\Panda.Core.csproj": {
+                "projectPath": "D:\\deskt\\net project\\panda\\Panda.Core\\Panda.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\deskt\\net project\\panda\\panda\\panda.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\deskt\\net project\\panda\\panda\\panda.csproj",
+        "projectName": "panda",
+        "projectPath": "D:\\deskt\\net project\\panda\\panda\\panda.csproj",
+        "packagesPath": "C:\\Users\\79991\\.nuget\\packages\\",
+        "outputPath": "D:\\deskt\\net project\\panda\\panda\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\79991\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\deskt\\net project\\panda\\Panda.Application\\Panda.Application.csproj": {
+                "projectPath": "D:\\deskt\\net project\\panda\\Panda.Application\\Panda.Application.csproj"
+              },
+              "D:\\deskt\\net project\\panda\\Panda.Infrastructure\\Panda.Infrastructure.csproj": {
+                "projectPath": "D:\\deskt\\net project\\panda\\Panda.Infrastructure\\Panda.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0-preview.2.22153.1, )"
+            },
+            "Swagger": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

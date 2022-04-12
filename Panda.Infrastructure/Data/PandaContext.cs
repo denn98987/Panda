@@ -7,10 +7,6 @@ namespace Infrastructure.Data
     {
         public PandaContext(DbContextOptions<PandaContext> options): base(options){ }
 
-        public DbSet<Panda> Pandas
-        {
-            get;
-            set;
-        }
+        public DbSet<Panda> Pandas { get; set; }
     }
 }
